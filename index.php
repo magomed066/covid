@@ -15,19 +15,19 @@ setlocale(LC_ALL, 'ru_RU');
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>COVID-19</title>
+	<link rel="shortcut icon" href="logo.svg" type="image/x-icon">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-		<link rel="shortcut icon" href="logo.svg" type="image/x-icon">
 </head>
 
 <body>
 
 	<div class="container">
 		<div class="row mt-4">
-			<div class="col-md-6 col-sm-12">
+			<div class="col-md-6">
 				<img src="logo.svg" alt="Logo" class="logo ml-1">
 			</div>
-			<div class="col-md-6 col-sm-12 mt-3">
+			<div class="col-md-6 mt-3">
 				<form class="search d-flex justify-content-end">
 					<select name="countries" class="form-control col-md-5 mr-0" id="select">
 						<option value="Весь мир">Весь мир</option>
@@ -39,18 +39,18 @@ setlocale(LC_ALL, 'ru_RU');
 			</div>
 		</div>
 		<div class="row mt-5">
-			<div class="col-md-12 col-sm-6">
+			<div class="col-md-12">
 				<h2>Статистика</h2>
-				<table class="table border-1 mt-3">
+				<table class="table table-hover table-responsive-sm mt-3 table-bordered">
 					<thead class="text-right">
 						<tr class="text-right">
-							<td class="text-left">Регион</td>
-							<td>Подтвержденные</td>
+							<td class=" text-left">Регион</td>
+							<td>Подтвержденные</tdcal>
 							<td>Выздоровевшие</td>
 							<td>Умершие</td>
 						</tr>
 					</thead>
-					<tbody class="list-container text-center">
+					<tbody class="list-container text-center table-info">
 						<tr class="text-right">
 							<td class="country text-left"></td>
 							<td class="confirmed"></td>
@@ -59,7 +59,6 @@ setlocale(LC_ALL, 'ru_RU');
 						</tr>
 					</tbody>
 				</table>
-
 			</div>
 		</div>
 	</div>
